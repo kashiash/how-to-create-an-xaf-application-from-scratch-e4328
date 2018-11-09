@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -53,25 +53,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker5\TestFolder\Dlls\12.2.4\DevExpress.Data.v12.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Xpo.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Xpo.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker5\TestFolder\Dlls\12.2.4\DevExpress.ExpressApp.Xpo.v12.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker5\TestFolder\Dlls\12.2.4\DevExpress.ExpressApp.v12.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Persistent.BaseImpl.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Persistent.BaseImpl.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker5\TestFolder\Dlls\12.2.4\DevExpress.Persistent.BaseImpl.v12.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Xpo.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker5\TestFolder\Dlls\12.2.4\DevExpress.Xpo.v12.2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
