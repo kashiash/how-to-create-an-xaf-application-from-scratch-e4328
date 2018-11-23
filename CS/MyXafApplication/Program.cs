@@ -22,7 +22,7 @@ namespace MyXafAppplication {
         static void Main() {
             MyXafApplication myXafApplication = new MyXafApplication();
             myXafApplication.ApplicationName = "MyXafApplication";
-            myXafApplication.ConnectionString = "Integrated Security=SSPI;Pooling=false;Data Source=(local);Initial Catalog=MyXafApplication";
+            myXafApplication.ConnectionString = "XpoProvider = DB2; Server = 172.18.56.57:50000; User ID = db2admin; Password = Niezapominajka1; Database = sample; Persist Security Info = true " ;//"Integrated Security=SSPI;Pooling=false;Data Source=(local);Initial Catalog=MyXafApplication";
             AuthenticationActiveDirectory authentication = new AuthenticationActiveDirectory() { CreateUserAutomatically = true};
             myXafApplication.Security = new SecurityStrategyComplex(typeof(SecuritySystemUser), typeof(SecuritySystemRole), authentication);
             myXafApplication.Modules.Add(new MyModule());
