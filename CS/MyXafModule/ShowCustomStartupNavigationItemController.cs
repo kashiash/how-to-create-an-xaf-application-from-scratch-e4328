@@ -12,35 +12,14 @@ namespace MyXafModule.Controllers
             TargetWindowType = WindowType.Main;
         }
 
-        private void WinShowNavigationItemController_StartupWindowShown(object sender, EventArgs e)
-        {
-            ((WinShowViewStrategyBase)Application.ShowViewStrategy).StartupWindowShown -= WinShowNavigationItemController_StartupWindowShown;
-            var controller = Window.GetController<ShowNavigationItemController>();
-            ShowStartupNavigationItem(controller);
-        }
-        protected virtual void ShowStartupNavigationItem(ShowNavigationItemController controller)
-        {
-            var args = Environment.GetCommandLineArgs();
-
-            if (args.Length >= 2)
-            {
-                var sc = ViewShortcut.FromString(args[1]);
-
-                var item = new ChoiceActionItem("CommandLineArgument", sc);
-                controller.ShowNavigationItemAction.DoExecute(item);
-            }
-        }
-
-
-
         protected override void OnActivated()
         {
             base.OnActivated();
-            navigationController = Frame.GetController<ShowNavigationItemController>();
-            if (navigationController != null)
-            {
-                navigationController.CustomShowNavigationItem += OnCustomShowNavigationItem;
-            }
+            //navigationController = Frame.GetController<ShowNavigationItemController>();
+            //if (navigationController != null)
+            //{
+            //    navigationController.CustomShowNavigationItem += OnCustomShowNavigationItem;
+            //}
         }
         void OnCustomShowNavigationItem(object sender, CustomShowNavigationItemEventArgs e)
         {
@@ -55,7 +34,7 @@ namespace MyXafModule.Controllers
         }
         protected override void OnDeactivated()
         {
-            navigationController.CustomShowNavigationItem -= OnCustomShowNavigationItem;
+           // navigationController.CustomShowNavigationItem -= OnCustomShowNavigationItem;
             base.OnDeactivated();
         }
     }
